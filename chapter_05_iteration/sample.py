@@ -20,14 +20,14 @@ The break keyword
 """
 The continue keyword
 """
-# while True:
-#     line = input('>')
-#     if line == '#':
-#         continue
-#     if line == 'done':
-#         break
-#     print(line)
-# print('Done!')
+while True:
+    line = input('>')
+    if len(line) > 0 and line[0] == '#':
+        continue
+    if line == 'done':
+        break
+    print(line)
+print('Done!')
 
 """
 The for loop
@@ -73,15 +73,15 @@ Maximum and minimum loop
 
 # print(min([4, 3, 5, 6, 9, 3]))
 
-def findMin(values):
-    smallest = None
-    for value in values:
-        if smallest is None or value < smallest:
-            smallest = value
-    return smallest
-
-
-print(findMin([4, 3, 5, 6, 9, 3]))
+# def find_min(values):
+#     smallest = None
+#     for value in values:
+#         if smallest is None or value < smallest:
+#             smallest = value
+#     return smallest
+#
+#
+# print(find_min([4, 3, 5, 6, 9, 3]))
 
 
 
